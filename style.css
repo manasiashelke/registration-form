@@ -1,0 +1,218 @@
+
+html, body {
+/* min-height: 100%; */
+height: 100vh;
+}
+body, div,  input, select, p { 
+padding: 0;
+margin: 0;
+outline: none;
+font-family: Roboto, Arial, sans-serif;
+font-size: 20px;
+color: rgb(12, 12, 12);
+}
+body {
+background: url(adhyaya\ bg.png) no-repeat center;
+background-size: cover;
+}
+
+h1, h2 {
+text-transform: uppercase;
+font-weight: 400;
+text-align: center;
+}
+h2 {
+margin: 0 0 0 8px;
+font-weight: 400;
+color: aqua;
+font-family: revampedregular;
+/* text-shadow: 2px 2px 8px aqua; */
+/* text-shadow: 1px 1px 2px aqua, 0 0 25px aqua , 0 0 5px aqua; */
+text-shadow: 0 0 3px aqua, 0 0 5px aqua;
+}
+.main-block {
+   padding: 50px 20px 20px 20px;
+  
+
+}
+
+.fa-graduation-cap {
+font-size: 72px;
+}
+.form {
+   
+   margin: auto;
+    display: flex;
+    flex-direction: column;
+background:  #f70475; 
+/* background:  #f16eab;  */
+opacity: 0.8; 
+width: 45rem;
+align-items: center;
+justify-content: center;
+padding: 10px;
+border-radius: 20px;
+/* margin: 20px; */
+}
+form{
+    width: 70%;
+}
+.title {
+display: flex;
+align-items: center;
+margin-top: 20px;
+margin-bottom: 20px;
+text-align: center;
+justify-content: center;
+font-size: 25px;
+}
+.info {
+display: flex;
+flex-direction: column;
+}
+.input{
+    border-bottom: 1px solid aqua;
+    margin-bottom: 30px;
+    box-shadow: 0px 1px 3px -6px aqua;
+-webkit-box-shadow: 0px 1px 3px -6px aqua;
+-moz-box-shadow: 0px 1px 3px -6px aqua
+}
+input, select {
+padding: 5px;
+color: rgb(20, 20, 20);
+background: none;
+border: none;
+align-self: center; 
+}
+
+.bx{
+    color: aqua;
+    animation: rotate 1s infinite ease-in-out;
+    
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+       
+    }
+    25% {
+        transform: rotate(20deg);
+      
+    }
+    50% {
+        transform: rotate(-20deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+        /* font-size: 22px; */
+    }
+}
+select{
+    border-bottom: 1px solid aquamarine;
+    margin-bottom: 30px;
+    width: 31rem;  
+}
+.input input::placeholder {
+color: rgb(17, 17, 17);
+}
+
+
+option {
+background: #f16eab; 
+border: none;
+
+}
+.option_heading{
+font-weight: bolder;
+font-size: 22px;
+}
+.submit{
+    align-self: center;
+    margin: 10px 30%;
+    width: 40%;
+    padding: 20px;
+    font-size: 22px;
+    border-radius: 10px;
+    background: none;
+    border: 2px solid aqua;
+    color: aqua;
+  
+    cursor: pointer;
+    text-shadow:  0 0 0.2em aqua, 0 0 1em aqua;
+    box-shadow: inset 0 0 .4em 0 aqua, 0 0 .6em 0 aqua;
+}
+.submit:hover{
+    font-weight: 700;
+   
+}
+.note{
+    margin: 20px;
+  text-align: center;
+}
+
+
+
+
+
+@media (max-width:1000px){
+    .form{
+        width: 70%;
+    }
+    select{
+        width: 25rem;
+    }
+}
+@media (max-width:760px){
+    .form{
+        width: 80%;
+    }
+   
+}
+
+@media (max-width:650px){
+   
+    select{
+        width: 20rem;
+    }
+}
+
+
+
+@media (max-width:498px){
+    .title, input, select, button, option{
+        font-size: 18px;
+    }
+    .note{
+        font-size: 13px;
+    }
+     .form{
+         width: 90%;
+       
+     }
+     .submit{
+         width: 90%;
+         margin: 10px;
+     }
+    
+ }
+ @media(max-width:450px){
+     .form{
+         width: 98%;
+     }
+     form{
+width: 90%;
+     }
+    
+ }
+
+ @media(max-width:375px){
+  
+    select{
+        width: 13rem;
+    }
+}
