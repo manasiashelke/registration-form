@@ -1,9 +1,7 @@
 
 body, div,  input, select, p { 
-padding: 0;
 margin: 0;
 outline: none;
-/* font-family: 'Roboto Serif', sans-serif; */
 font-family: "Poppins", sans-serif;
 font-size: 18px;
 color: #fff;
@@ -21,7 +19,7 @@ font-weight: 400;
 color: aqua;
 font-family: revampedregular;
 
-text-shadow: 0 0 3px aqua, 0 0 5px aqua;
+/* text-shadow: 0 0 3px aqua, 0 0 5px aqua; */
 }
 .main-block {
    padding: 50px 20px 20px 20px;
@@ -34,24 +32,22 @@ text-shadow: 0 0 3px aqua, 0 0 5px aqua;
 }
 
 .form {
-   
-   margin: auto;
-    display: flex;
-    flex-direction: column;
-
+  margin: auto;
+  display: flex;
+flex-direction: column;
 opacity: 0.8; 
 width: 38rem;
 align-items: center;
 justify-content: center;
 padding: 10px;
 border-radius: 20px;
-
 backdrop-filter: blur(30px);
 /* box-shadow: 10px 10px 10px rgba(40, 55, 68, 0.0.3); */
-box-shadow: inset 0 0 .4em 0 aqua, 0 0 .6em 0 aqua;
+box-shadow: inset 0 0 .1em 0 aqua, 0 0 .2em 0 aqua;
 border: 2px solid aqua;
 z-index: 2;
 }
+
 form{
     width: 70%;
 }
@@ -70,7 +66,7 @@ flex-direction: column;
 }
 .input{
     border-bottom: 1px solid aqua;
-    margin-bottom: 30px;
+    margin-bottom: 42px;
     box-shadow: 0px 0px 1px -1px aqua;
 -webkit-box-shadow: 0px 0px 1px -1px aqua;
 -moz-box-shadow: 0px 0px 1px -1px aqua
@@ -92,22 +88,38 @@ select{
     border-bottom: 1px solid aquamarine;
     margin-bottom: 30px;
     width: 31rem;  
+
 }
 .input input::placeholder {
 color: #fff;
 }
-
+ .selected{
+    color: rgb(66, 66, 66);
+    /* margin: 40px; */
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
 
 option {
-background:#f16eab; 
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+background:#0c0152; 
+color: aqua;
+backdrop-filter: blur(30px);
 border: none;
-padding: 45px;
-
+padding: 450px;
+margin-left: 50px;
 }
 .option_heading{
 font-weight: bolder;
 font-size: 22px;
+color: #ff2592;
+margin-top: 50px;
 }
+
 .submit{
     align-self: center;
     margin: 10px 30%;
@@ -120,12 +132,12 @@ font-size: 22px;
     color: aqua;
     font-family: revampedregular;
     cursor: pointer;
-    text-shadow:  0 0 0.2em aqua, 0 0 1em aqua;
+    /* text-shadow:  0 0 0.2em aqua, 0 0 1em aqua; */
   
 }
 .submit:hover{
     font-weight: 700;
-    box-shadow: inset 0 0 .4em 0 aqua, 0 0 .6em 0 aqua;
+    box-shadow: inset 0 0 .2em 0 aqua, 0 0 .4em 0 aqua;
 }
 .note{
     margin: 20px;
